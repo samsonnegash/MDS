@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Client Information </title>
+	<meta charset="utf-8">
+	<meta name ="description" content= "Client Information">
+	<link href="bbs-css/stylingsheet.css" type="text/css" rel="stylesheet" />
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+		
+		.navigation {
+		  width: 100%;
+		  background-color: black;
+		}
+		
+		img {
+		  width: 25px;
+		  border-radius: 50px;
+		  float: left;
+		}
+		
+		.logout {
+		  font-size: .8em;
+		  font-family: 'Oswald', sans-serif;
+			position: relative;
+		  right: -18px;
+		  bottom: -4px;
+		  overflow: hidden;
+		  letter-spacing: 3px;
+		  opacity: 0;
+		  transition: opacity .45s;
+		  -webkit-transition: opacity .35s;
+		  
+		}
+		
+		.button {
+			text-decoration: none;
+			float: right;
+		  padding: 12px;
+		  margin: 15px;
+		  color: white;
+		  width: 25px;
+		  background-color: black;
+		  transition: width .35s;
+		  -webkit-transition: width .35s;
+		  overflow: hidden
+		}
+		
+		a:hover {
+		  width: 100px;
+		}
+		
+		a:hover .logout{
+		  opacity: .9;
+		}
+		
+		a {
+		  text-decoration: none;
+		}
+			
+				
+				</style>
+
+</head>
+
+<body>
+	<div id="bigWrapper">
+		<div id="topMenu">
+			<ul>
+				<li><a href="bindex.html">Home</a></li>
+				<li><a href="profile.html">About The Doctors</a></li>
+				<li><a href="associationAffiliations.php">Doctors Solution</a></li>
+				<li><a href="paymentOptions.html">Payment options</a></li>
+				<li><a href="clientinformation.html">Client Information</a></li>
+			</ul>
+		</div>
+		<div id="topBanner">
+			<h1>
+			
+			</h1>	
+		</div>	
+		<div id="header">
+			
+			<div class="navigation">
+		  
+				<a class="button" href="PHP - Login And Registration Source Code/logout.php">
+				  <img src="logout.jpg">
+			
+			  <div class="logout">LOGOUT</div>
+			
+				</a>
+				</div>
+		</div>	
+		<div id="headerAA">
+			<h2> 
+				Client Information That Send To Doctor
+			</h2>
+		</div>		
+		<div id="paragraphAA">
+			<p>
+				<a href="ClientInformationForm.docx">Client Information Form</a> <br>
+				<p>Input The Form After You Fill :</p>
+				<form action="http://localhost:10080/mental%20health%20solution/MHS/BBS/Php%20QR%20Generator/index.php" method="POST">
+				<input type="file" name="data">
+				<input type="submit">
+			
+
+				</form>
+				
+
+
+			</p>
+		</div>		
+		<div id="copyRight">
+			<p>
+				Bluemoon Hackaton Seminar <b>#IAMSOLUTION</b> @Disability Solution.
+			</p>
+		</div>
+</body>
+</html>
